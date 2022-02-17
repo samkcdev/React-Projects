@@ -1,38 +1,96 @@
+/* custom varibales */
+
 .App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url("./images/pattern-background-desktop.svg") no-repeat
+    var(--pale-blue-primary);
+  background-size: contain;
+}
+
+.header-banner + div {
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+.wrapper {
+  flex: 0 1 auto;
+  width: 450px;
+  box-shadow: 0 15px 15px 1px var(--desaturated-blue-neutral);
+  border-radius: 20px;
+}
+
+/* @media screen and (max-width: 1440px) and (min-width: 900px) {
+  .wrapper {
+    width: 30%;
+
+  }
+}
+@media screen and (max-width: px) and (min-width: 375px) {
+  .wrapper {
+    width: 90%;
+
+  }
+} */
+
+.header-banner {
+  border-radius: 20px 20px 0 0;
+  height: 23vh;
+  background: url("./images/illustration-hero.svg") no-repeat;
+}
+
+.description {
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+
+.description h1 {
+  margin-bottom: 0.5em;
+}
+
+.plan-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.plan-info {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: url("./images/icon-music.svg") no-repeat;
+  margin-right: 20px;
+}
+
+.payment-actions {
+  padding: 0 1.2em 2em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.payment-actions button {
+  font-size: 1rem;
+  padding: 1em 0;
+  color: #fff;
+  background: var(--bright-blue-primary);
+  font-weight: 700;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.payment-actions a {
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.padding-outer-lg {
+  padding: 2.5em 3.5em;
 }
